@@ -1,0 +1,9 @@
+name: phxlib
+dependencies:
+  - astropy
+  - matplotlib
+  - numpy
+  - pip
+  - pylint
+  - python
+  - scipy
