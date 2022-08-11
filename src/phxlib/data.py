@@ -80,6 +80,6 @@ class PhoenixData:
             flux = hdulist[0].data
         return flux
 
-    def interpolate_hires_flux(self, teff, logg, fe)
+    def interpolate_hires_flux(self, teff, logg, fe):
         '''Interpolate in grid of high-resolution flux spectra.'''
         subgrid = get_subgrid(teff, logg, fe)
