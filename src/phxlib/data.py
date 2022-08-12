@@ -5,7 +5,7 @@ from pathlib import Path
 from astropy.io.fits import open as fits_open
 
 class PhoenixData:
-    '''Manage access to Phoenix data on disk. '''
+    '''Manage access to Phoenix data on disk.'''
 
     def __init__(self, root=None, version='v1.0'):
         self.set_root(root=root)
