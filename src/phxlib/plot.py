@@ -23,9 +23,8 @@ class HiresFigure:
         if minor:
             self.axes.xaxis.set_ticks(minor, minor=True)
 
-    def plot(self, x, y, **kwargs):
-        print(len(x))
-        if len(x) < 20000:
+    def plot(self, x, y, steplimit=20000, **kwargs):
+        if len(x) < steplimit:
             self.axes.step(x, y, where='mid', **kwargs)
         else:
             self.axes.plot(x, y, **kwargs)
