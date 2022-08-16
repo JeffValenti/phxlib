@@ -2,7 +2,7 @@ name: phxlib
 dependencies:
   - astropy
   - matplotlib
-  - numpy
+  - numpy>=1.22.3,<1.23.0
   - pip
   - pylint
   - python
