@@ -65,7 +65,7 @@ def rebin_spectrum(wave, flux, binedges):
     '''Fit spectrum with B spline. Integrate B spline into new bins.'''
 
     spline_param = splrep(wave, flux)
-    bspline = BSpline(*spline_param, extrapolate=True)
+    bspline = BSpline(*spline_param, extrapolate=False)
     binwave = [0.5 * (lo + hi) for lo, hi in zip(
         binedges[:-1], binedges[1:])]
     binflux = [bspline.integrate(lo, hi) / (hi - lo) for lo, hi in zip(
